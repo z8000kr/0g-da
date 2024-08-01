@@ -1,0 +1,18 @@
+[package]
+name = "utils"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = { version = "1.0.71", features = ["backtrace"] }
+ethers = { version = "2.0.4", features = ["ws", "rustls", "openssl"] }
+tracing = "0.1.37"
+tracing-subscriber = { version = "0.3.11", features = ["env-filter"] }
+tokio = { version = "1.28.1", features = ["full"] }
+ark-ec = "0.4"
+ark-bn254 = "0.4"
+ark-ff = "0.4"
+ark-serialize = "0.4"
+num-bigint = { version = "0.4", default-features = false }
